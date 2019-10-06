@@ -1,5 +1,30 @@
+/* variables */
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Quattrocento', serif;
+*/
+
+:root {
+    --fontmain: 'Oswald', sans-serif;
+    --fontsecundary: 'Quattrocento', serif;
+    --azul: #272b41;
+    --amarillo: #f2b632;
+
+
+}
+
 body {
-    background-color: gainsboro;
+    font-family: var(--fontsecundary);
+    color: var(--azul);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fontmain);
 }
 
 .redes-sociales {
@@ -8,7 +33,108 @@ body {
 
 }
 
+.navbar-principal {
+    text-align: center;
+}
 
-.navbar-principal{
-text-align: center;
+
+.navbar-light .navbar-nav .nav-link,
+.nav-link{
+	font-family: var(--fontmain);
+	font-weight:600;
+	color: var(--azul);
+	font-size: 1.2rem;
+	transition:border-bottom 0.3s ease-in;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.nav-link:hover,
+.active .nav-link{
+	color:var(--amarillo);
+	border-bottom: 1px dashed var(--amarillo);
+}
+
+.titulo-slider {
+    color: var(--amarillo);
+    text-transform: uppercase;
+    font-family: var(--fontmain);
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+@media screen and (min-width:992px) {
+    .titulo-slider {
+        font-size: 2.5rem;
+    }
+}
+
+.descripcion-slider {}
+
+.titulosPrincipales {
+    color: var(--amarillo);
+}
+
+.subtitulosPrinciales {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.carousel-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 73, 94, 0.6);
+}
+
+@media screen and (min-width:992px) {
+    .carousel-caption {
+        bottom: 80px;
+    }
+}
+
+.bg-azul {
+    background-color: var(--azul);
+}
+
+.bg-amarillo {
+    background-color: var(--amarillo);
+}
+
+.btn-primary {
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
+
+
+.yo-informacion {
+    padding: 4rem 2rem !important;
+}
+
+@media screen and (min-width:760px) {
+    .yo-informacion {
+        padding: 5rem !important;
+    }
+}
+
+.titulos-yo {
+    border-bottom: 5px solid white;
+    margin: 1rem 0;
+
+}
+
+.text-primary {
+    color: var(--azul) !important;
+}
+
+.desarrollado{
+    font-family: var(--fontmain);
 }
