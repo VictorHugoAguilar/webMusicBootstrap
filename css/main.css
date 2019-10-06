@@ -1,0 +1,14 @@
+body {
+    background-color: gainsboro;
+}
+
+.redes-sociales {
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+
+.navbar-principal{
+text-align: center;
+}
